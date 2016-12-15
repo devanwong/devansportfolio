@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Ditto;
+    src: url(fonts/Didot-HTF-L96-Light-Ital.otf);
+}
+
+body{
+	background-color: #75547F;
+}
+
+.bubble 
+{
+	position: relative;
+	width: 735px;
+	height: 320px;
+	padding: 9px;
+	background: #FFFFFF;
+	-webkit-border-radius: 47px;
+	-moz-border-radius: 47px;
+	border-radius: 47px;
+	margin-top: 100px;
+}
+
+.bubble:after 
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 17px 15px 0;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -15px;
+	bottom: -17px;
+	left: 50%;
+}
+
+
+h1 {
+	font-family: Ditto;
+	font-size: 100px;
+	line-height: 60px;
+	font-weight: normal;
+	color: gray;
+	letter-spacing: 2px;
+	-webkit-font-smoothing:antialiased;
+   	text-rendering: optimizeLegibility;
+}
+
+
+.contact {
+	display: inline-block;
+	vertical-align: top;
+	font-family: arial;
+	font-style: italic;
+}
+

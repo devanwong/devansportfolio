@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Ditto;
+    src: url(fonts/Didot-HTF-L96-Light-Ital.otf);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	font-family: Arial; 
+
+}
+
+body{ 
+	width: 1366px;
+	height: auto;
+}
+
+a {
+	font-size: 16px;
+	font-family: arial; 
+	text-decoration: none;
+	color: black;
+}
+
+ul li {
+	display: inline
+}
+
+h1 {
+  font-family: Ditto;
+  font-size: 100px;
+  line-height: 60px;
+  vertical-align: center;
+  text-align: center;
+  font-weight: normal;
+  color: gray;
+  letter-spacing: 2px;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  text-align: left;
+}
+
+
+/*scrolling back to top function*/
+.scrollToTop{
+  padding:10px; 
+  text-align:center; 
+  background: transparent;
+  font-weight: normal;
+  color: #75547F;
+  text-decoration: none;
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  display:none;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+  background-color: transparent;
+}
+
+
+/*index CSS*/
+
+#index {
+	vertical-align: center;
+	margin-top: 200px;
+  height: 800px;
+  width: auto;
+	background-color: black;
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  text-decoration: none;
+  color: #75547F;
+}
+
+/*about me CSS */
+
+.aboutMe {
+  padding: 100px;
+  text-align: center;
+  vertical-align: center;
+  height: 800px;
+  background-color: white;
+  display: inline-block;
+}
+
+.header{
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+}
+.photos{
+  margin-top: 50px;
+  display: inline-block;
+  width:600px;
+}
+.bio{
+  display: inline-block;
+  margin-left: 100px;
+  vertical-align: top;
+  width:400px;
+}
+
+
+.profile {
+    background-color: yellow;
+    /* Rotate div */
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+
+.profile2 {
+    background-color: yellow;
+    /* Rotate div */
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+
+/*portfolio */
+.portfolio {
+  padding: 60px;
+  text-align: center;
+  vertical-align: center;
+  height: 800px;
+  background-color: white;
+}
+
+
+
+
+
+/*contact CSS*/
+
+.contact {
+  display: inline-block;
+  vertical-align: top;
+  font-family: arial;
+  font-style: italic;
+  padding: 60px;
+  height: 800px;
+  background-color: #75547F;
+}
+
+.bubble 
+{
+  position: relative;
+  width: 735px;
+  height: 320px;
+  padding: 9px;
+  background: #FFFFFF;
+  -webkit-border-radius: 47px;
+  -moz-border-radius: 47px;
+  border-radius: 47px;
+  margin-top: 100px;
+}
+
+.bubble:after 
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 15px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -15px;
+  bottom: -17px;
+  left: 50%;
+}
+
+.chat {
+  margin-top: 80px;
+}
+.info{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.connect {
+  text-align: center;
+}
+
