@@ -141,16 +141,35 @@ p {
 
 
 /*portfolio */
-.portfolio {
+#portfolio {
   padding: 60px;
   text-align: center;
   vertical-align: center;
-  height: 800px;
+  height: 2000px;
   background-color: white;
 }
 
+.technologies{
+  display: inline-block;
+}
+.techPhotos{
+  width:50px;
+  height:50px;
+}
 
+.techPhotos.grayscale {
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
 
+.techPhotos.grayscale.hover {
+  filter: none;
+  -webkit-filter:grayscale(0%);
+}
+
+.portfolioWork{
+  width:60%;
+}
 /*contact CSS*/
 
 .contact {

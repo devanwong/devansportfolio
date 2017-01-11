@@ -1,71 +1,39 @@
 	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>	
-<!-- 	// <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script> -->
+
 	<script src="jquery.scrollTo-2.1.2/jquery.scrollTo.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 100) {
-				$('.scrollToTop').fadeIn();
-			} else {
-				$('.scrollToTop').fadeOut();
-			}
-		});
-
-//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-
-	$("a").click(function(){
-		console.log(this.hash)
-		if(this.hash){
-			$(window).scrollTo($(this.hash), {duration:800})
-		}
-	}
-	)});
-
-	</script>
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
 
 	<!DOCTYPE html>
 	<html lang='en'>
-	<head>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>Devan's Website</title>
-	</head>
+			<head>
+			<link rel="stylesheet" type="text/css" href="index.css">
+			<title>Devan's Website</title>
+			</head>
 
 	<body>
 
 	<!-- INDEX  -->
 	<div id="index">
-	<div id="jumbptron">
-	<center>
-		<img src="devanFront.svg" height="200">
-	<br>
-	<ul>
-		<li><a class="hvr-float" href="#aboutMe">About Me</a></li> &nbsp;&nbsp;&nbsp;
-		<li><a class="hvr-float" href="DevansResume.pdf">Resume</a></li>	&nbsp;&nbsp;&nbsp;
-		<li><a class="hvr-float" href="#portfolio">Portfolio</a></li>	&nbsp;&nbsp;&nbsp;
-		<li><a class="hvr-float" href="https://www.linkedin.com/in/devanwong">LinkedIn</a></li>	&nbsp;&nbsp;&nbsp;	
-		<li><a class="hvr-float" href="https://github.com/devanwong">Github</a></li>&nbsp;&nbsp;&nbsp;
-		<li><a class="hvr-float" href="#contact">Contact</a></li>	
-	</ul>
-	</center>
-	</div>
+		<div id="jumbotron">
+			<center>
+					<img src="devanFront.svg" height="200">
+					<br>
+			<ul>
+					<li><a class="hvr-float" href="#aboutMe">About Me</a></li> &nbsp;&nbsp;&nbsp;
+					<li><a class="hvr-float" href="DevansResume.pdf">Resume</a></li>	&nbsp;&nbsp;&nbsp;
+					<li><a class="hvr-float" href="#portfolio">Portfolio</a></li>	&nbsp;&nbsp;&nbsp;
+					<li><a class="hvr-float" href="https://www.linkedin.com/in/devanwong">LinkedIn</a></li>	&nbsp;&nbsp;&nbsp;	
+					<li><a class="hvr-float" href="https://github.com/devanwong">Github</a></li>&nbsp;&nbsp;&nbsp;
+					<li><a class="hvr-float" href="#contact">Contact</a></li>	
+			</ul>
+			</center>
+		</div>
 	</div>
 
 	<!-- ABOUT ME -->
@@ -74,13 +42,13 @@
 		     <img class="profile" src="photos/12.jpg" height="250">				
 		     <img class="profile2" src="photos/3.jpg" height="250"><br>
 		     <img class="profile2" src="photos/8.jpg" height="250">	
-		     <img class="profile" src="photos/11.jpg" height="250">				     
+		     <img class="profile" src="photos/11.jpg" height="250">
 		</div>
 	<div class="bio">
 			<h1 class="header">About Me</h1><br><br>
 			<p class="me">Hi! I’m Devan. I am a software developer currently living in the Bay Area. <br><br>
 
-			I graduated from SJSU (Go Spartans!) with a BA in digital media and a BFA in graphic design. I recently finished an immersive boot camp, which taught me three full-stacks in Swift, Python and MEAN. <br><br>
+			I graduated from SJSU (Go Spartans!) with a BFA in digital media and a BA in graphic design. I recently finished an immersive boot camp, which taught me three full-stacks in Swift, Python and MEAN. <br><br>
 
 			Though I am fairly new to the programming world, coding has become a hobby to me. Why not turn what you enjoy doing into a career? With the evolving technology we live in today, the art of software engineering is inspiring and I want to be part of it. <br><br>
 
@@ -95,64 +63,104 @@
 
 	<!-- PORTFOLIO -->
 	<div id="portfolio" class="portfolio">
-		<h1>Portfolio</h1><br><br>
-
-		<!-- directMe -->
-		<button type="button" class="btn" data-toggle="modal" data-target="#directMe"><img src="photos/directme.png" width="300"></button>
-		<div class="modal fade" id="directMe" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">DirectMe</h4>
-					</div>
-					<div class="modal-body">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/x1LLdF-f5eE" frameborder="0" allowfullscreen></iframe>
-						<br><p>DirectMe is a web application that uses Yelp API, Weather API and Twilio API. This app randomly generates a place for someone to go based on his or her city, category, price range and distance. Special features that this app has are a randomize "DirectMe again" button (in case one is not satisfied with their first option), a text information to one's phone and a link to the company's Yelp page.<br>
-						This  application was built by four programmers and was created in less then a week. DirectMe took second in a week long hack-a-thon.<br>
-						Technologies used: Python, CSS3, Materialize, JS, jQuery, MySQL, Yelp API, Twilio API, Weather API, Pylot MVC
-						</p>
-						<a href="https://github.com/wildlingjill/directme">GitHub</a>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div> &nbsp;&nbsp;
-
-
-		<!-- Jumpster -->
-		<button type="button" class="btn" data-toggle="modal" data-target="#jumpster"><img src="photos/jumpster.png" height="200"></button>
-		<div class="modal fade" id="jumpster" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Jumpster</h4>
-					</div>
-					<div class="modal-body">
-						<img src="photos/jumpster2.png" width="200">
-						<img src="photos/jumpster3.png" width="200">
-						<br><p>Jumpster is an iOS application that is used to test the static vertical of an individual. By using Core Motion framework it allowed the app to measure airtime and vertical distance.<br>
-
-						This app is a great social app, simply place phone on your stomach and jump! 
-						Special features include a toggle from centimeters to inches, a slider which customized the magnitude, and a reset button. <br>
-
-						Jumpster was created by a group of four people. This app won 1st place in a 24 hour hack-a-thon.<br>
-
-						Technologies used: Swift 3, Core Motion, Xcode 8 <br>
-
-						</p>
-						<a href="https://github.com/devanwong/jumpster">GitHub</a>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<h1 class="header">Portfolio</h1><br><br><br>
+			<div class="technologies">
+				<img class="techPhotos" src="photos/angular.png">
+				<img class="techPhotos" src="photos/css3.png">
+				<img class="techPhotos" src="photos/html5.png">
+				<img class="techPhotos" src="photos/javascript.png">
+				<img class="techPhotos" src="photos/mongodb.png">
+				<img class="techPhotos" src="photos/github2.png">
+				<img class="techPhotos" src="photos/mysql.png">
+				<img class="techPhotos" src="photos/node.png">
+				<img class="techPhotos" src="photos/python.png">
+				<img class="techPhotos" src="photos/swift.png">
+			</div><br><br>
+			<div class="porfolioWork">
+				<!-- directMe -->
+				<button type="button" class="btn" data-toggle="modal" data-target="#directMe"><img src="photos/directMe.svg" width="200"></button>
+				<div class="modal fade" id="directMe" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">DirectMe</h4>
+							</div>
+							<div class="modal-body">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/x1LLdF-f5eE" frameborder="0" allowfullscreen></iframe>
+								<br><p>DirectMe is a web application that uses Yelp API, Weather API and Twilio API. This app randomly generates a place for someone to go based on his or her city, category, price range and distance. Special features that this app has are a randomize "DirectMe again" button (in case one is not satisfied with their first option), a text information to one's phone and a link to the company's Yelp page.<br>
+								This  application was built by four programmers and was created in less then a week. DirectMe took second in a week long hack-a-thon.<br>
+								Technologies used: Python, CSS3, Materialize, JS, jQuery, MySQL, Yelp API, Twilio API, Weather API, Pylot MVC
+								</p>
+								<a href="https://github.com/wildlingjill/directme">GitHub</a>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+				<!-- Jumpster -->
+				<button type="button" class="btn" data-toggle="modal" data-target="#jumpster"><img src="photos/jumpster.svg" height="200"></button>
+				<div class="modal fade" id="jumpster" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Jumpster</h4>
+							</div>
+							<div class="modal-body">
+								<img src="photos/jumpster2.png" width="200">
+								<img src="photos/jumpster3.png" width="200">
+								<br><p>Jumpster is an iOS application that is used to test the static vertical of an individual. By using Core Motion framework it allowed the app to measure airtime and vertical distance.<br>
+
+								This app is a great social app, simply place phone on your stomach and jump! 
+								Special features include a toggle from centimeters to inches, a slider which customized the magnitude, and a reset button. <br>
+
+								Jumpster was created by a group of four people. This app won 1st place in a 24 hour hack-a-thon.<br>
+
+								Technologies used: Swift 3, Core Motion, Xcode 8 <br>
+
+								</p>
+								<a href="https://github.com/devanwong/jumpster">GitHub</a>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div> 
+		<!-- WEATHER APPLICATION -->
+				<button type="button" class="btn" data-toggle="modal" data-target="#weather"><img src="photos/weatherApi.svg" width="200"></button>
+				<div class="modal fade" id="weather" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">WeatherApp</h4>
+							</div>
+							<div class="modal-body">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/RHtrq5M_C2Y" frameborder="0" allowfullscreen></iframe>
+
+								<br><p>Weather application was built using AngularJS 2.0. This application allows one type in any city and will return the temperature forecast for up to 7 days. <br>
+
+								Technologies used: AngularJS 2.0, Weather API, Bootstrap, HTML, Javascript. <br>
+
+								</p>
+								<a href="https://github.com/devanwong/weatherApp">GitHub</a>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
 </div>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
 	<!-- CONTACT ME  -->
 
 
